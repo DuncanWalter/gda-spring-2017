@@ -8,7 +8,7 @@
 Vector is a class for storing (x,y,z) information. Supports operations with other vectors and with matrices.
 */
 
-class Vector
+class Vector3
 {
 public:
     //Constructor(s)
@@ -43,6 +43,7 @@ public:
     void project(Vector3 otherVector3);                                         //!<Projects the vector onto otherVector3.
     Vector3 projected(Vector3 otherVector3) const;                              //!<Returns a projected version of the vector onto otherVector.
 protected:
+    double x, y, z;
 private:
 };
 
